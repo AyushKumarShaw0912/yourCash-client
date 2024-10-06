@@ -34,7 +34,7 @@ try {
           </div>
 
           {/* Logout Button */}
-          {user&&<div className="flex items-center space-x-4">
+          {<div className="flex items-center space-x-4">
             <button
               onClick={handleLogout}
               className="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-500 transition duration-200"
