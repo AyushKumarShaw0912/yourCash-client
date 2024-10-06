@@ -20,10 +20,12 @@ withCredentials: true }
 )
 
 if(res.status==200){
+  navigate("/")
     toast.success("Login successfull!", {
       });
 localStorage.setItem("user",JSON.stringify(res.data.user))
-    navigate("/")
+window.location.reload();
+   
       
 }
     }catch(error){

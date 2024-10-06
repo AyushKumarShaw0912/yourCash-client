@@ -193,7 +193,7 @@ window.location.reload();
                 <option value="">Select a Payment Method</option>
                 <option value="Card">Card</option>
                 <option value="Cash">Cash</option>
-                <option value="Upi">Upi</option>
+                <option value="UPI">Upi</option>
                 <option value="Cheque">Cheque</option>
                 <option value="Bank Transfer">Bank Transfer</option>
               </select>
