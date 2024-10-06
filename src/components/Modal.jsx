@@ -170,7 +170,6 @@ window.location.reload();
                 value={formData.subcategory}
                 onChange={handleChange}
                 className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
-                required
                 disabled={!formData.category}
               >
                 <option value="">Select a Subcategory</option>
