@@ -1,13 +1,9 @@
 import axios from 'axios';
-
-
-import { useCookies } from 'react-cookie';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function TextLinkExample() {
-  const [cookies, setCookie] = useCookies(['token'])
   const navigate=useNavigate()
   const handleLogout=async()=>{
 try {
