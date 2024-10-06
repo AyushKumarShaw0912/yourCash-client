@@ -18,7 +18,7 @@ try {
     })
   if(res.status=200){
     toast.success("Logout successfully")
-    //setCookie("token",null)
+    setCookie("token",null)
     localStorage.removeItem("user")
     navigate("/login")
   }
