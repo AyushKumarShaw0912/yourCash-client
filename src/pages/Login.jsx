@@ -15,7 +15,8 @@ const handleSubmit=async(e)=>{
         e.preventDefault()
 const res=await axios.post("https://yourcash-api.onrender.com/api/v1/login",{
     username,password
-},{headers: {'Content-Type': 'application/json'}, }
+},{headers: {'Content-Type': 'application/json'},
+withCredentials: true }
 )
 
 if(res.status==200){
