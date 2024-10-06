@@ -12,7 +12,7 @@ try {
     {headers: {'Content-Type': 'application/json'},
      withCredentials : true
     })
-  if(res.status=200){
+  if(res.status==200){
     toast.success("Logout successfully")
     localStorage.removeItem("user")
     navigate("/login")
