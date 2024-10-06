@@ -9,7 +9,6 @@ import "react-toastify/dist/ReactToastify.css";
 function TextLinkExample() {
   const [cookies, setCookie] = useCookies(['token'])
   const navigate=useNavigate()
-  console.log(cookies.token)
   const handleLogout=async()=>{
 try {
   const res=await axios.post("https://yourcash-api.onrender.com/api/v1/logout",
@@ -18,7 +17,6 @@ try {
     })
   if(res.status=200){
     toast.success("Logout successfully")
-    setCookie("token",null)
     localStorage.removeItem("user")
     navigate("/login")
   }
