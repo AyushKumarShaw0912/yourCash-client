@@ -22,7 +22,7 @@ withCredentials: true }
 if(res.status==200){
     toast.success("Login successfull!", {
       });
-      setCookies("token",res.data.token)
+      //setCookies("token",res.data.token)
 localStorage.setItem("user",JSON.stringify(res.data.user))
     navigate("/")
       
